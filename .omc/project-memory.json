@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1787650623798,
+  "projectRoot": "/Users/mateusemaria/Desktop/faculdade-eng-de-software-descomplica",
+  "techStack": {
+    "languages": [],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "desenvolvimento-dinamico": {
+      "path": "desenvolvimento-dinamico",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1787650623768,
+      "keyFiles": []
+    }
+  },
+  "hotPaths": [],
+  "userDirectives": []
+}
