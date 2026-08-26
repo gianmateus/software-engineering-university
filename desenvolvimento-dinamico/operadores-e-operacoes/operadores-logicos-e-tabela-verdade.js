@@ -34,3 +34,9 @@ const resultadoCombo2 = !(a && b) || a;
 
 console.log(`(true || false) && !false: ${resultadoCombo1}`); // true
 console.log(`!(true && false) || true: ${resultadoCombo2}`); // true
+
+// Anotações e dicas sobre essa matéria:
+// 1. O operador E lógico (&&) retorna true apenas se ambos os operandos forem true.
+// 2. O operador OU lógico (||) retorna true se pelo menos um dos operandos for true.
+// 3. O operador NÃO lógico (!) inverte o valor booleano do operando.
+// 4. É possível combinar operadores lógicos para criar expressões mais complexas.
