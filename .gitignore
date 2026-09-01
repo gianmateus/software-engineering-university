@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# Ferramentas locais (Claude Code / oh-my-claudecode)
+.omc/
+.claude/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Ambiente / segredos
+.env
+.env.*
+!.env.example
