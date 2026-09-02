@@ -8,7 +8,7 @@ let pessoa = {
         "rua": "Rua Principal",
         "numero": 123
     },
-    "telefones": ["1234-5678", "8765-4321"]
+    "telefones": ["1234-5678", "8765-4321"] 
 };
 
 console.log(pessoa);
