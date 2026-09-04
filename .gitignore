@@ -6,15 +6,6 @@
 .vscode/
 *.iml
 
-# Ferramentas locais (Claude Code / oh-my-claudecode)
-.omc/
-.claude/
-
-# IA / assistentes - NAO subir pro GitHub
-CLAUDE.md
-exercicios/gabaritos/
-.ia-notas/
-
 # Node
 node_modules/
 npm-debug.log*
