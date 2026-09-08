@@ -69,7 +69,7 @@
 
         <section id="formulario">
             <h2>Formulários</h2>
-            <form>
+            <form name="contatoForm">
                 <div class="form-group">
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" class="form-control">
@@ -79,6 +79,7 @@
                     <input type="email" id="email" class="form-control" name="email">
                 </div>
                 <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="reset" class="btn btn-secondary">Redefinir</button>
             </form>
         </section>
 
@@ -110,6 +111,17 @@
 
                 <input type="text" id="keyInput" class="form-control" placeholder="Pressione uma tecla"
                     style="margin-top: 1em;">
+
+                <input type="text" id="focusBlurInput" class="form-control" placeholder="Clique aqui e depois saia"
+                    style="margin-top: 1em;">
+            </div>
+        </section>
+
+        <section id="api">
+            <h2>Consumo API Externa</h2>
+            <div style="margin: 1em;" id="apiSection">
+                <button id="callApi" style="margin-bottom: 1em;" class="btn btn-secondary">
+                    Chamar API Externa</button>
             </div>
         </section>
 
@@ -228,7 +240,49 @@
         keyInput.addEventListener('keypress', function (event) {
             console.log('Tecla que produz caractere pressionada:', event.key);
         });
+
+        // Eventos de Envio de Formulário (submit)
+        const contatoForm = document.forms['contatoForm'];
+        contatoForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            alert('Formulário enviado com sucesso!');
+        });
+
+        // Eventos de Clique em Botão (click)
+        const clickExampleButton = document.getElementById('clickButton');
+        clickExampleButton.addEventListener('click', function () {
+            alert('Botão de clique acionado!');
+        });
+
+        // Eventos de Redefinição de Formulário (reset)
+        const resetButton = document.querySelector('button[type="reset"]');
+        resetButton.addEventListener('click', function () {
+            alert('Formulário redefinido!');
+        });
+
+        // Eventos de Foco
+        const focusBlurInput = document.getElementById('focusBlurInput');
+        focusBlurInput.addEventListener('focus', function () {
+            focusBlurInput.style.backgroundColor = 'lightyellow';
+        });
+
+        focusBlurInput.addEventListener('blur', function () {
+            focusBlurInput.style.backgroundColor = 'white';
+        });
+
+        // Eventos de Tempo
+        setTimeout(function () {
+            alert('Este alerta aparece após 3 segundos!');
+        }, 3000);
+
+        setInterval(function () {
+            console.log('Este log aparece a cada 5 segundos');
+        }, 5000);
+
     </script>
+
+    <script type="text/javascript" src="api.js"></script>
+
 </body>
 
 </html>
